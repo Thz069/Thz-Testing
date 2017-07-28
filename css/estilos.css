@@ -12,9 +12,7 @@ body{
 	position: relative;
 	margin: auto;
 }
-.logo {
-  	float: left;
-}
+
 
 /* ~~ Top Navigation Bar ~~ */
 
@@ -22,7 +20,7 @@ body{
   	width: 1200px;
   	margin: 0 auto;
   	height: 70px;
-	position: relative;
+	position: fixed;
 }
 
 .navigation-bar {
@@ -36,11 +34,13 @@ body{
 
 .navigation-bar img{
 	float:left;
+	position: fixed;
+	margin-left:-49px
 }
 
 .navigation-bar ul {
   	padding: 0px;
-  	margin: 0px;
+  	margin: 0px 0px 0px 191px;
   	text-align:center;
   	display:inline-block;
   	vertical-align:top;
@@ -86,16 +86,33 @@ body{
 }
 	
 #side-nav{
-	width: 20px;
+	width: 191px;
 	height: 980px;
-	position: relative;
+	position: static;
 	margin: 70px auto auto;
+	
 }
 .sidenav{
-	margin-top:70px;
 	background-color: #04661E;
     height: 980px;
     width: 191px;
-    text-align:center;
-	position: fixed;
+    text-align: center;
+	position: static;
+	float: left;
+	margin-top: 70px
+}
+
+#contentbox{
+	width: 1009px;
+	height: 980px;
+	position: static;
+	margin: 70px auto auto;
+}
+
+.content{
+	height: 980px;
+    text-align: left;
+	position: static;
+	float: right;
+	margin: 10px auto auto auto;
 }
