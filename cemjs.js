@@ -7,7 +7,7 @@ function mydiv() {
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
+  if (!e.target.matches('.divimagbut')) {
     var divimgdrop = document.getElementById("divimgdrop");
       if (divimgdrop.classList.contains('show')) {
         divimgdrop.classList.remove('show');
